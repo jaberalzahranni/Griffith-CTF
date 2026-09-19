@@ -1,0 +1,29 @@
+{
+  "name": "Follow the Bot",
+  "category": "Linux",
+  "description": "The Griffith University cybersecurity investigation has now traced the suspicious ticket traffic to the Starlight Arena ticket server.\n\nYour team recovered the server access log from the same 90-second sale window.\n\n## Your Mission\n\nAnalyse `access.log` and determine which account was repeatedly performing automated ticket actions.\n\nBasic Linux commands such as `grep`, `sort`, and `uniq` may be useful.\n\nSubmit the suspicious username using the `GRIFFITH{...}` flag format.\n\nExample:\n\n`username123` → `GRIFFITH{username123}`",
+  "value": 50,
+  "type": "standard",
+  "state": "visible",
+  "logic": "any",
+  "max_attempts": 0,
+  "flag": {
+    "type": "static",
+    "content": "GRIFFITH{scalper_bot}",
+    "data": ""
+  },
+  "hints": [
+    {
+      "title": "Hint 1: Trace the Suspicious Source",
+      "content": "Look through the sale-window access log and focus on the account that repeatedly performs successful purchase actions.",
+      "cost": 5
+    },
+    {
+      "title": "Hint 2: Count the Repeated Account",
+      "content": "Compare the usernames. Commands such as grep, sort and uniq -c can help reveal which account appears over and over.",
+      "cost": 5,
+      "requires": 0
+    }
+  ],
+  "file": "access.log"
+}

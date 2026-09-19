@@ -1,0 +1,29 @@
+{
+  "name": "The 90-Second Mystery",
+  "category": "Networking",
+  "description": "Griffith University is running a cybersecurity outreach simulation based on a fictional concert-ticket incident.\n\nDuring the simulated Starlight Arena presale, every ticket sold out in only 90 seconds. The Griffith cybersecurity investigation team suspects that an automated ticket-buying bot overwhelmed the ticket server.\n\nInvestigators recovered a network traffic summary from the sale window. Most customers generated only a small number of requests, but one source behaved very differently.\n\n## Your Mission\n\nAnalyse `traffic_log.csv` and identify the suspicious source IP responsible for the automated activity.\n\nSubmit your answer using the `GRIFFITH{...}` flag format, replacing dots in the IP address with underscores.\n\nExample:\n\n`192.0.2.10` → `GRIFFITH{192_0_2_10}`",
+  "value": 50,
+  "type": "standard",
+  "state": "visible",
+  "logic": "any",
+  "max_attempts": 0,
+  "flag": {
+    "type": "static",
+    "content": "GRIFFITH{203_0_113_77}",
+    "data": ""
+  },
+  "hints": [
+    {
+      "title": "Hint 1: Spot the Outlier",
+      "content": "Most fans only refresh a ticket page a few times. Look for a source whose request count is wildly different from everyone else.",
+      "cost": 5
+    },
+    {
+      "title": "Hint 2: Rank the Traffic",
+      "content": "Compare the requests column first. Sorting by request count will make the automated source stand out immediately.",
+      "cost": 5,
+      "requires": 0
+    }
+  ],
+  "file": "traffic_log.csv"
+}

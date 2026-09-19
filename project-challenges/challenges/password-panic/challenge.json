@@ -1,0 +1,29 @@
+{
+  "name": "Password Panic",
+  "category": "Password Security",
+  "description": "The Starlight Arena surprise concert presale sold out in only 90 seconds.\n\nInvestigators believe a ticket-buying bot may have gained access to a staff account connected to the presale system.\n\n## Your Mission\n\n1. Download and examine `password_evidence.txt`.\n2. Review the password reminder and staff profile information.\n3. Use the clues to determine the weak password that could have been guessed.\n4. Submit the recovered password using this format:\n\n`GRIFFITH{password}`\n\nExample:\n\n`GRIFFITH{example123}`",
+  "value": 100,
+  "type": "standard",
+  "state": "visible",
+  "logic": "any",
+  "max_attempts": 0,
+  "flag": {
+    "type": "static",
+    "content": "GRIFFITH{Starlight2026}",
+    "data": ""
+  },
+  "hints": [
+    {
+      "title": "Hint 1: Password Reminder",
+      "content": "Look carefully at the password reminder recovered by investigators. What two pieces of information does it tell you to combine?",
+      "cost": 0
+    },
+    {
+      "title": "Hint 2: Staff Profile",
+      "content": "Check the staff profile information in the evidence file. The password was created by combining the favourite band with the concert year.",
+      "cost": 0,
+      "requires": 0
+    }
+  ],
+  "file": "password_evidence.txt"
+}

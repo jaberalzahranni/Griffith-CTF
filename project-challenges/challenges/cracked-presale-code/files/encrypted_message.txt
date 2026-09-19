@@ -1,0 +1,29 @@
+========================================
+STARLIGHT ARENA - RECOVERED MESSAGE
+========================================
+
+INCIDENT:
+The surprise concert presale sold out in only 90 seconds.
+
+During the investigation, the Cyber Response Team recovered
+the following encrypted message from the presale system.
+
+RECOVERED ENCRYPTED MESSAGE:
+
+SUHVDOH FRGH: VWDJHSDVV
+
+INVESTIGATION NOTE:
+
+Investigators believe the message was encrypted using a
+simple Caesar cipher.
+
+The letters appear to have been shifted by the same number
+of positions in the alphabet.
+
+YOUR TASK:
+
+Decode the encrypted message and identify the secret
+presale code.
+
+Remember: the final answer must be submitted using the
+required CTF flag format.

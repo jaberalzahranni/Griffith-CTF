@@ -1,0 +1,29 @@
+{
+  "name": "Cracked Presale Code",
+  "category": "Cryptography",
+  "description": "Investigators recovered a strange encrypted message while examining evidence from the Starlight Arena ticketing incident.\n\nThe message appears to contain an important presale code, but it has been encrypted using a simple cipher.\n\n## Your Mission\n\n1. Download `encrypted_message.txt`.\n2. Examine the encrypted message.\n3. Decode the message to discover the hidden presale code.\n4. Submit the recovered code using this format:\n\n`GRIFFITH{CODE}`\n\nExample:\n\n`GRIFFITH{EXAMPLE}`",
+  "value": 100,
+  "type": "standard",
+  "state": "visible",
+  "logic": "any",
+  "max_attempts": 0,
+  "flag": {
+    "type": "static",
+    "content": "GRIFFITH{STAGEPASS}",
+    "data": ""
+  },
+  "hints": [
+    {
+      "title": "Hint 1: Identify the Cipher",
+      "content": "The encrypted message looks like each letter has been shifted by the same number of positions in the alphabet. What simple cipher uses this technique?",
+      "cost": 0
+    },
+    {
+      "title": "Hint 2: Caesar Cipher",
+      "content": "This message uses a Caesar cipher. Try shifting each encrypted letter 3 positions backwards in the alphabet.",
+      "cost": 0,
+      "requires": 0
+    }
+  ],
+  "file": "encrypted_message.txt"
+}
